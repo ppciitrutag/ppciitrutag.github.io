@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css"><!-- Normalize to reset the useragent stylesheet -->
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Main.css">
+    <link rel="stylesheet" type="text/css" href="hamburgers.min.css">
+
+ 
+  <title>Panimalar</title>
+</head>
+<body>
+  <div id="particles-js"></div>
+<div id="gutter"></div>
+<div id="particles-js2"></div>
+
+  <nav id="menu" class="menu" style="overflow: scroll;">
+
+    
+
+<!-- General section
+       -->     
+        <section class="menu-section nav navbar-nav">
+                        
+   
+      </section>
+
+
+
+       <section class="menu-section">
+                         
+      </section>
+      
+          <section class="menu-section">
+       
+      </section>
+
+    </nav>
+        <div class="mainwrapper">
+
+    <header class="fixed-header">
+
+  <button class="hamburger hamburger--emphatic visible-xs"  type="button">
+    <span class="positionham" style="position: relative;">
+       <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+    </span>
+ 
+  <h3 style="position:absolute;left: 15%;top: 0;color: white;animation-duration: 0.5s;font-family: Arial" class="menuanim animated slideInLeft">&nbsp;&nbsp; MENU</h3>
+
+</button>
+     <nav class="navbar navbar-default hidden-xs">
+    <!-- Brand and toggle get grouped for better mobile display -->
+   <div class="container contentnav">    <!-- Collect the nav links, forms, and other content for toggling -->
+    
+   </div>
+ 
+</nav>
+      </header>
+ 
+ <main id="panel"  data-slideout-ignore>
+          <div class="paddingfornav">
+
+      <div class="container mainc">
+  
+<div class="row">
+  <div class="col-md-12 borderline">
+ <img class="img-responsive" src="college1.png">
+    </div>
+</div>
+<div class="bannershield">
+
+ <div class="row">
+     <div class="col-md-12">
+          <div class="jumbotron text-center">
+     <h1><span><img src="iitm_logo.png"></span> IIT Project submission</h1>
+   </div>
+     </div>
+   </div>
+  <div class="row">
+  <div class="col-md-6">
+           <div class="thumbs photo" data-gallery="one">
+          <div class="gallerythumb">
+              
+          </div>
+          
+          <div class="photo-overlay">
+            <h3>Vegetable slicer (On process..)</h3>
+
+              <a class="button" href="">Click to Download files</a>
+          </div>
+        </div>
+      </div>
+           <div class="col-md-6">
+          <div class="thumbs photo" data-gallery="one">
+          <div class="gallerythumb">
+              
+          </div>
+          
+          <div class="photo-overlay">
+            <h3>Solar dryer</h3>
+
+              <a class="button" href="solardryer.zip">Click to Download files</a>
+          </div>
+</div>
+</div>
+</div>
+  <div class="row">
+  <div class="col-md-12">
+           <div class="thumbs photo" data-gallery="one">
+          <div class="gallerythumb">
+              
+          </div>
+          
+          <div class="photo-overlay">
+            <h3>Palm tree climber</h3>
+
+              <a class="button" href="palmtree.zip">Click to Download files</a>
+          </div>
+        </div>
+      </div>
+          
+</div>
+</div>
+
+
+
+  <footer id="footers">
+  <div class="container"> 
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3><i class="fas fa-copyright"></i> Panimalar all rights reserved</h3>
+        </div>
+      </div>
+  </div>
+    </footer>  
+  </div>
+</div><!--  Padding for nav div -->
+</div><!-- Main container end -->
+    </main>
+  </div>
+   <script
+  src="jquery-3.2.1.min.js"></script>
+ <script src="particles.min.js"></script>
+
+  
+<script type="text/javascript" src="slideout.min.js"></script>
+  <script type="text/javascript" src="bootstrap.min.js"></script>
+ <script>
+   var slideout = new Slideout({
+  'panel': document.getElementById('panel'),
+  'menu': document.getElementById('menu'),
+  'padding': 200,
+  'tolerance': 70
+});
+document.querySelector('.hamburger').addEventListener('click', function() {
+ slideout.toggle();
+});
+
+var fixed = document.querySelector('.fixed-header');
+
+slideout.on('translate', function(translated) {
+  fixed.style.transform = 'translateX(' + translated + 'px)';
+});
+
+slideout.on('beforeopen', function () {
+  fixed.style.transition = 'transform 300ms ease';
+  fixed.style.transform = 'translateX(200px)';
+});
+
+slideout.on('beforeclose', function () {
+  fixed.style.transition = 'transform 300ms ease';
+  fixed.style.transform = 'translateX(0px)';
+});
+
+slideout.on('open', function () {
+  fixed.style.transition = '';
+});
+
+slideout.on('close', function () {
+  fixed.style.transition = '';
+});
+    var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+
+    var hamburgers = document.querySelectorAll(".hamburger");
+        var animate=document.querySelector(".menuanim");
+
+    if (hamburgers.length > 0) {
+      forEach(hamburgers, function(hamburger) {
+        hamburger.addEventListener("click", function() {
+          this.classList.toggle("is-active");
+          animate.classList.toggle("slideOutLeft");
+        }, false);
+      });
+    }
+
+  </script>
+<script src="index.js"></script> <!-- Our main js file -->
+</body>
+</html>
